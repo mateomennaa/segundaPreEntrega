@@ -1,0 +1,300 @@
+/*cuerpo y elementos generales */
+body {
+    color: white;
+    background-color: black;
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 170px;
+}
+
+.navbar-text,
+.navbar-brand,
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: green !important;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px;
+}
+
+.nav-link {
+    font-size: 1.2em;
+}
+
+.main {
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+    width: 1300px;
+}
+
+.main h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.d-item {
+    height: 500px;
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.descripcion {
+    text-align: justify;
+    line-height: 1.7em;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.textofooter {
+    display: block;
+    margin-top: 20px;
+}
+
+.centrado {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+/*productos destacados */
+.same-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.same-height .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.same-height img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.btn-small {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+}
+
+.btn-small:hover {
+    background-color: #495057;
+}
+
+.productosdest-1 img {
+    width: 100%;
+    height: auto;
+}
+
+.productosdest-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/*formularios */
+form {
+    padding: 50px 55px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+input,
+textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: auto;
+}
+
+/*carrusel */
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/*galerías y descripciones */
+.gallery-container,
+.description-container {
+    margin: 20px;
+}
+
+/*iconos y cajas de características */
+.feature-box {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.feature-box i {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    /* encabezado  */
+    header {
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+        max-width: 130px;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+
+    .navbar-nav .nav-item:last-child {
+        margin-top: 20px; 
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .productosdest-1 {
+        margin-bottom: 20px; 
+    }
+    
+    .productosdest-1 img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .card-body {
+        padding: 10px; 
+    }
+
+    .row {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    /* descripcione */
+    .descripcion .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descripcion .col-lg-6 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        text-align: center;
+    }
+
+    .card.same-height {
+        margin-bottom: 30px;
+    }
+}
